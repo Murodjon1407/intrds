@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Public Sans";
+}
+.header{
+    padding-top: 20px;
+}
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 39px;
+}
+.header__link{
+    color: #36536b;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.header__btn{
+    max-width: 173px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+    border: none;
+    padding: 10px;
+}
+.header__burger{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+@media (max-width:630px){
+    .header__burger{
+        display: block;
+    }
+    .header__list{
+        display: none;
+    }
+}
+.hero{
+    padding-top: 58px;
+    padding-bottom: 177px;
+}
+.hero__texbox{
+    max-width: 546px;
+    width: 100%;
+    margin-top: 81px;
+}
+.hero__title{
+    color: #36536b;
+    font-family: "DM Serif Display";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+}
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:880px){
+    .hero__wrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__title{
+        font-size: 48px;
+    }
+    .hero__img{
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.easy{
+    padding-bottom: 180px;
+}
+.easy__textbox{
+    max-width: 445px;
+    width: 100%;
+}
+.easy__title{
+    color: #36536b;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    margin-bottom: 24px;
+}
+.easy__text{
+    color: rgb(108, 130, 148);
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.easy__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 900px){
+    .easy__wrapper{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .easy__img{
+        max-width: 391px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .easy__title{
+        font-size: 36px;
+    }
+}
